@@ -1,0 +1,191 @@
+/* Общие стили */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Manrope', sans-serif;
+    position: relative;
+}
+
+/* Секция контактов */
+.contacts-section {
+    width: 100%;
+    max-width: 1200px;
+    padding: 40px 100px;
+    background: #64939D;
+    color: #FFFFFF;
+    box-sizing: border-box;
+    margin: 0 auto;
+    position: relative;
+}
+
+.content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.text-content {
+    flex: 1;
+    max-width: 50%;
+}
+
+/* Стили для карты */
+.map-container {
+    position: relative;
+    margin-top: 130px;
+    flex: 1;
+    max-width: 100%;
+}
+
+.map-image {
+    width: 500px;
+    height: 200px;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.map-pin {
+    position: absolute;
+    top: 35%;
+    left: 35%;
+    transform: translate(-50%, -100%);
+}
+
+/* Нижняя часть (дисклеймер и копирайт) */
+/* Добавьте этот шрифт в <head> вашего HTML (если ещё не подключен) */
+/* Например, Unbounded или другой рубленый шрифт */
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@400;500&display=swap');
+
+.disclaimer-container {
+    max-width: 1105px;
+    margin: 0 auto;
+    font-family: 'Manrope', sans-serif;
+    color: #FFFFFF;
+    margin-top: 0;
+    text-align: left;
+}
+
+.disclaimer {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.4;
+    /* Межстрочный интервал */
+    letter-spacing: 5px;
+    margin-bottom: 10px;
+    /* Отступ перед копирайтом */
+}
+
+.page-footer {
+    position: relative;
+    padding-top: 14px;
+    margin: 0 auto;
+}
+
+.footer-line {
+    position: absolute;
+    left: 8.5%;
+    right: 90.75%;
+    top: 0;
+    height: 1px;
+    background: #FFFFFF;
+}
+
+.footer-text {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 115%;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+/* Остальные стили */
+.contacts-title {
+    font-family: 'Unbounded', sans-serif;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.contact-info {
+    margin-bottom: 30px;
+}
+
+.address,
+.phone {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0 0 15px 0;
+}
+
+.phone-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.messengers {
+    display: flex;
+    gap: 10px;
+}
+
+.messenger-link {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    transition: transform 0.2s;
+}
+
+.messenger-icon {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.contact-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background: #FFFFFF;
+    border: none;
+    border-radius: 50px;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #000000;
+    cursor: pointer;
+    margin-bottom: 40px;
+    transition: background 0.3s;
+}
+
+/* Адаптация для мобильных */
+@media (max-width: 768px) {
+    .contacts-section {
+        padding: 40px 20px;
+    }
+
+    .content-wrapper {
+        flex-direction: column;
+    }
+
+    .text-content,
+    .map-container {
+        max-width: 100%;
+    }
+
+    .map-container {
+        order: -1;
+        margin-bottom: 30px;
+    }
+
+    .footer-section {
+        width: 100%;
+        padding: 20px;
+        position: static;
+        transform: none;
+        height: auto;
+    }
+}

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Наши врачи - РТ-Клиника</title>
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="ourdoctors.css">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Unbounded:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Первая часть (меню) -->
+    <nav class="menu">
+        <ul>
+            <li><a href="/about">О НАС</a></li>
+            <li><a href="/doctors">НАШИ ВРАЧИ</a></li>
+            <li><a href="/promotions">АКЦИИ</a></li>
+            <img src="Group 6.png"><li><a href="/appointment" class="appointment-link">ЗАПИСАТЬСЯ НА ПРИЕМ</a></li>
+            
+        </ul>
+        <a class="phone-number">+7 (999) 888-77-66</a>
+        <div class="social-icons">
+            <img src="Telegram.png" alt="Telegram">
+            <img src="WhatsApp.png" alt="WhatsApp">
+        </div>
+    </nav>
+
+    <!-- Вторая часть -->
+    <section class="doctors-section">
+        <!-- Хлебные крошки -->
+        <div class="breadcrumbs">Главная / Наши врачи</div>
+
+        <!-- Заголовок -->
+        <h1 class="section-title">Наши врачи</h1>
+
+        <!-- Фильтры -->
+        <div class="filters">
+            <button class="filter-btn">ВВЕДИТЕ ФИО</button>
+            <button class="filter-btn">НАЗВАНИЕ СПЕЦИАЛЬНОСТИ</button>
+            <button class="filter-btn">СТАНЦИЯ МЕТРО</button>
+            <button class="filter-btn active">ПОКАЗАТЬ РЕЗУЛЬТАТ</button>
+        </div>
+
+        <!-- Кнопки навигации -->
+        <button class="nav-button prev">&#9664;</button> 
+        <button class="nav-button next">&#9654;</button>
+
+        <!-- Сетка врачей -->
+        <div class="doctors-grid">
+
+            <!-- Врач 1 -->
+            <div class="doctor-card" style="left: 100px; top: 378px;">
+                <div class="photo-wrapper">
+                    <img src="Group 58.png" alt="Анна Ивановна">
+                </div>
+                <div class="doctor-info">
+                    <h3>Анна Ивановна</h3>
+                    <p class="specialization">терапевт, пародонтолог</p>
+                    <a href="#" class="appointment-link">Записаться на прием</a>
+                </div>
+            </div>
+
+            <!-- Врач 2 -->
+            <div class="doctor-card" style="left: 353px; top: 378px;">
+                <div class="photo-wrapper">
+                    <img src="Group 60.png" alt="Александр Петров">
+                </div>
+                <div class="doctor-info">
+                    <h3>Александр Петров</h3>
+                    <p class="specialization">ортодонт</p>
+                    <a href="#" class="appointment-link">Записаться на прием</a>
+                </div>
+            </div>
+
+            <!-- Врач 3 -->
+            <div class="doctor-card" style="left: 606px; top: 378px;">
+                <div class="photo-wrapper">
+                    <img src="Group 62.png" alt="Алла Матвеева">
+                </div>
+                <div class="doctor-info">
+                    <h3>Алла Матвеева</h3>
+                    <p class="specialization">стоматолог детский</p>
+                    <a href="#" class="appointment-link">Записаться на прием</a>
+                </div>
+            </div>
+
+            <!-- Врач 4 -->
+            <div class="doctor-card" style="left: 860px; top: 378px;">
+                <div class="photo-wrapper">
+                    <img src="Group 64.png" alt="Анастасия Кирова">
+                </div>
+                <div class="doctor-info">
+                    <h3>Анастасия Кирова</h3>
+                    <p class="specialization">ортодонт</p>
+                    <a href="#" class="appointment-link">Записаться на прием</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- Третья часть -->
+    <section class="callback-section">
+        <div class="left-side">
+            <h1>Заказать обратный звонок</h1>
+            <p>Наш сотрудник ответит вам в ближайшее время</p>
+
+            <div class="for-client">
+                <a>Введите ваше имя</a>
+                <a>+7 ( ___ ) ___ - __ - __</a>
+                <button>Заказать звонок</button>
+            </div>
+        </div>
+
+        <div class="right-side">
+            <img class="rectangle10" src="Rectangle 10.png" alt="Сотрудники клиники">
+        </div>
+    </section>
+    
+    <section class="disclaimer-container">
+            <div class="disclaimer">
+                ИМЕЮТСЯ ПРОТИВОПОКАЗАНИЯ, </br>
+                НЕОБХОДИМА КОНСУЛЬТАЦИЯ СПЕЦИАЛИСТА
+            </div>
+            <div class="footer-text">
+                <img src="Group5_1.png">
+                2025 ООО «ГК РТ-Клиника» ИНН 1122334455
+            </div>
+    </section>  
+</body>
+</html>

@@ -1,0 +1,113 @@
+/* Main container styles */
+.main-container {
+    position: relative;
+    width: 1200px;
+    height: 741px;
+    margin: 100px auto; /* Центрирование и отступ сверху */
+}
+
+.background-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url('doc.png') no-repeat center center;
+    background-size: cover;
+    z-index: 1;
+}
+
+.foreground-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+
+/* Text styles */
+.health, .beauty, .quality {
+    position: absolute;
+    font-family: 'Unbounded', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 90px;
+    line-height: 112px;
+    color: #000000;
+    border: 1px solid #FFFFFF;
+    z-index: 3;
+}
+
+.health {
+    width: 640px;
+    left: 146px;
+    top: 186px; /* Учитываем отступ 100px */
+}
+
+.beauty {
+    width: 544px;
+    left: 242px;
+    top: 273px; /* Учитываем отступ 100px */
+}
+
+.quality {
+    width: 628px;
+    left: 472px;
+    top: 360px; /* Учитываем отступ 100px */
+}
+
+/* Info box styles */
+.info-box {
+    position: absolute;
+    width: 303px;
+    height: 155px;
+    left: 797px;
+    top: 177px; /* Учитываем отступ 100px */
+    background: #64939D;
+    border-radius: 23px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 3;
+}
+
+.info-box p {
+    width: 274px;
+    padding: 10px;
+    font-family: 'Manrope', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 120%;
+    text-align: right;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+/* Button styles */
+.appointment-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 332px;
+    height: 53px;
+    left: 98px;
+    top: 497px; /* Учитываем отступ 100px */
+    background: #64939D;
+    border-radius: 200px;
+    border: none;
+    cursor: pointer;
+    z-index: 3;
+    
+    font-family: 'Manrope', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 33px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.appointment-button:hover {
+    background: #5a828b;
+    transform: scale(1.02);
+    transition: all 0.3s ease;
+}

@@ -1,0 +1,388 @@
+/* Общие стили для второй части */
+.about-section {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    height: 460px;
+    background: #FFFFFF;
+}
+
+.breadcrumbs {
+    position: absolute;
+    left: 100px;
+    top: 18px;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    color: #000000;
+}
+
+.about-title {
+  position: absolute;
+  width: 692px;
+  height: 60px;
+  left: 98px;
+  top: 80px;
+  font-family: 'Unbounded';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 80px;
+  line-height: 103.5%;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.blue-bg {
+    position: absolute;
+    width: 100%;
+    height: 280px;
+    left: 0;
+    top: 180px;
+    background: #64939D;
+}
+
+.cards-container {
+    position: absolute;
+    height: 230px;
+    left: 100px;
+    right: 100px;
+    top: 205px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    padding: 20px 15px 20px 10px;
+    background: #FFFFFF;
+    border-radius: 10px;
+    position: relative;
+}
+
+.card span {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 120%;
+    text-transform: uppercase;
+    color: #000000;
+    flex-grow: 1;
+}
+
+.card-icon {
+    width: 50px;
+    height: 50px;
+    background: #F020B5;
+    border-radius: 10px;
+    position: relative;
+}
+
+/* Иконки внутри карточек (упрощенные версии) */
+.card:nth-child(1) .card-icon::before,
+.card:nth-child(1) .card-icon::after {
+    content: "";
+    position: absolute;
+    border: 3px solid #FFFFFF;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.card:nth-child(2) .card-icon::before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 27px;
+    border: 2px solid #FFFFFF;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Стили для третьей части (галерея) */
+.gallery-section {
+    position: relative;
+    width: 100%;
+    height: 340px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding-bottom: 65px;
+}
+
+.gallery-container {
+    display: flex;
+    gap: 30px;
+    padding: 40px 100px;
+    justify-content: center;
+}
+
+.gallery-item {
+    width: 250px;
+    height: 250px;
+    border-radius: 60px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.nav-arrow { 
+    width: 70px;
+    height: 70px;
+    background: #F020B5;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    top: 125px;
+    padding: 0;
+    position: relative;
+}
+
+.arrow-icon {
+    width: 19px;
+    height: 16px;
+    border: 2px solid #FFFFFF;
+    border-radius: 2px;
+    display: block;
+}
+
+.prev .arrow-icon {
+    transform: rotate(0deg);
+    margin-right: 5px;
+}
+
+.next .arrow-icon {
+    transform: rotate(180deg);
+    margin-left: 5px;
+}
+
+/* Стили для четвертой части (преимущества) */
+.advantages-section {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+.advantages-card {
+    width: 1000px;
+    height: 533px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+    background-color: #64939D;
+}
+
+.advantages-title {
+    width: 100%;
+    margin: 0 auto 37px;
+    font-family: 'Unbounded', sans-serif;
+    font-weight: 500px;
+    font-size: 45px;
+    line-height: 100%;
+    color: #000000;
+    background-color: #FFFFFF;
+    text-align: center;
+}
+
+.advantages-content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.advantages-bg-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.advantages-bg-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.advantages-text-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.advantages-text-image img {
+    width: 90%;
+    height: 90%;
+    object-fit: contain;
+}
+
+/* Стили для пятой части (лицензии и футер) */
+.licenses-section {
+    position: relative;
+    width: 100%;
+    height: 582px;
+    margin: 0 auto;
+    background: #F2F6F7;
+    padding-top: 45px;
+}
+
+.container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.section-title {
+    font-family: 'Unbounded', sans-serif;
+    font-weight: 600;
+    font-size: 45px;
+    line-height: 100%;
+    color: #000000;
+    margin-bottom: 67px;
+    text-align: center;
+
+}
+
+.licenses-container {
+    display: flex;
+    align-items: center; /* Выравниваем все элементы по центру по вертикали */
+    justify-content: space-between;
+    gap: 20px; /* Расстояние между элементами */
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.license-card {
+    width: 144px;
+    height: 181px;
+    background: #FFFFFF;
+    filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 10px;
+    overflow: hidden;
+    flex-shrink: 0; /* Запрещаем уменьшение карточек */
+}
+
+.license-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.navigation-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.nav-button {
+    width: 60px;
+    height: 60px;
+    background: #F020B5;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    flex-shrink: 0; /* Запрещаем уменьшение кнопок */
+}
+
+.arrow {
+    width: 19px;
+    height: 16px;
+    border: 2px solid #FFFFFF;
+    border-radius: 2px;
+    display: block;
+}
+
+.prev .arrow {
+    transform: rotate(0deg);
+}
+
+.next .arrow {
+    transform: rotate(180deg);
+}
+
+.therapy-button {
+    padding: 20px 10px;
+    background: #F020B5;
+    border-radius: 900px;
+    border: none;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 120%;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    cursor: pointer;
+    width: 440px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.disclaimer-container {
+    font-family: 'Manrope', sans-serif;
+    color: #246B7A;
+    margin-top: 70px;
+    padding-left: 8.5%; /* Отступ как на макете */
+    text-align: left;
+}
+
+.disclaimer {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.4; /* Межстрочный интервал */
+    letter-spacing: 5px;
+    margin-bottom: 10px; /* Отступ перед копирайтом */
+}
+
+.page-footer {
+    position: relative;
+    padding-top: 14px;
+    text-align: left;
+}
+
+.footer-line {
+    position: absolute;
+    left: 8.5%;
+    right: 90.75%;
+    top: 0;
+    height: 1px;
+    background: #236B7A;
+}
+
+.footer-text {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 115%;
+    color: #236B7A;
+    margin: 0;
+}

@@ -1,0 +1,602 @@
+/* Общие стили для второй части */
+.about-section {
+    margin-bottom: 50px;
+    /* или другое значение по необходимости */
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    /* УДАЛЕНО: height: 460px; - это основная причина наложения */
+    min-height: 460px;
+    /* ДОБАВЛЕНО: минимальная высота вместо фиксированной */
+    padding: 0 20px 60px;
+    /* ДОБАВЛЕНО: padding-bottom для отступа */
+    box-sizing: border-box;
+    background: #FFFFFF;
+    /* ДОБАВЛЕНО: */
+    /*overflow: hidden; /* Содержит абсолютно позиционированные элементы */
+}
+
+.breadcrumbs {
+    position: absolute;
+    top: 18px;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    color: #000000;
+}
+
+.about-title {
+    position: absolute;
+    top: 80px;
+    width: 603px;
+    font-family: 'Unbounded', sans-serif;
+    font-weight: 500;
+    font-size: 80px;
+    line-height: 103.5%;
+    text-transform: uppercase;
+    color: #000000;
+    margin: 0;
+}
+
+.cards-container {
+    position: absolute;
+    width: 100%;
+    ;
+    height: 230px;
+    top: 205px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+    margin: 0 auto;
+    /* Центрируем по горизонтали */
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    padding: 20px 15px 20px 10px;
+    background: #FFFFFF;
+    border-radius: 10px;
+    position: relative;
+    width: 330px;
+    /* Новая ширина */
+    height: 395px;
+    /* Новая высота */
+}
+
+.card img {
+    width: 100%;
+    /* Занимает всю ширину карточки */
+    height: 100%;
+    /* Занимает всю высоту карточки */
+    /*object-fit: cover; /* Сохраняет пропорции, обрезая лишнее */
+    border-radius: 8px;
+    /* Скругление углов */
+}
+
+.card span {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 120%;
+    text-transform: uppercase;
+    color: #000000;
+    flex-grow: 1;
+}
+
+.card-icon {
+    width: 50px;
+    height: 50px;
+    background: #F020B5;
+    border-radius: 10px;
+    position: relative;
+}
+
+/* Иконки внутри карточек (упрощенные версии) */
+.card:nth-child(1) .card-icon::before,
+.card:nth-child(1) .card-icon::after {
+    content: "";
+    position: absolute;
+    border: 3px solid #FFFFFF;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.card:nth-child(2) .card-icon::before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 27px;
+    border: 2px solid #FFFFFF;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Остальные иконки можно доработать аналогично */
+
+.message-icon {
+    position: absolute;
+    width: 30px;
+    /* Размер как в оригинале */
+    height: 30px;
+    right: 40px;
+    /* Позиционирование как в оригинале */
+    bottom: 55px;
+}
+
+.message-icon img {
+    width: 100%;
+    /* Растягиваем изображение на весь блок */
+    height: 100%;
+    object-fit: contain;
+    /* Сохраняем пропорции */
+}
+
+/* Стили для третьей части (галерея) */
+
+/* Gallery Section */
+.gallery-section {
+    position: relative;
+    width: 100%;
+    margin-top: 100px;
+    /* Увеличить отступ сверху (было 50px) */
+    margin: 200px auto 0;
+    /* ИЗМЕНЕНО: увеличен отступ сверху */
+    /* margin: 100px auto 0; /* Основное изменение - 100px отступ сверху */
+    height: auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+    clear: both;
+    /* ДОБАВЛЕНО: */
+    z-index: 1;
+    /* Гарантирует нахождение над другими элементами */
+    background-color: #64939D;
+}
+
+.gallery-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 50px;
+    /* ДОБАВЛЕНО: отступ снизу */
+}
+
+.blue-bg {
+    position: relative;
+    /* ИЗМЕНЕНО: было absolute */
+    width: 100%;
+    height: 380px;
+    /* УДАЛЕНО: left: 0; top: 0; */
+    margin-top: 30px;
+    /* ДОБАВЛЕНО: дополнительный отступ */
+    padding: 0 20px;
+    box-sizing: border-box;
+    clear: both;
+    /* ДОБАВЛЕНО: */
+    z-index: 1;
+}
+
+.appointment-title {
+    position: absolute;
+    width: 427px;
+    height: 26px;
+    left: 100px;
+    top: 65px;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 100%;
+    color: #FFFFFF;
+}
+
+.divider-top {
+    position: absolute;
+    width: 700px;
+    height: 0px;
+    left: 100px;
+    top: 144px;
+    border: 1px solid #FFFFFF;
+}
+
+.divider-bottom {
+    position: absolute;
+    width: 700px;
+    height: 0px;
+    left: 100px;
+    top: 285px;
+    border: 1px solid #FFFFFF;
+}
+
+.form-container {
+    position: absolute;
+    width: 700px;
+    height: 64px;
+    left: 100px;
+    top: 167px;
+}
+
+.form-input {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px 40px;
+    gap: 10px;
+    border: 2px solid #FFFFFF;
+    border-radius: 900px;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 120%;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.name-input {
+    position: absolute;
+    width: 226.59px;
+    height: 52px;
+    left: 0;
+    top: 12px;
+}
+
+.phone-input {
+    position: absolute;
+    width: 274.13px;
+    height: 52px;
+    left: 240.75px;
+    top: 12px;
+}
+
+/* Стили для поля телефона со звездочкой */
+.phone-field-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.required-star {
+    position: absolute;
+    top: -18px;
+    right: 200px;
+    color: rgba(255, 255, 255, 0.9);
+    font-family: 'Manrope';
+    font-size: 18px;
+    font-weight: 700;
+}
+
+
+.required-field {
+    position: absolute;
+    width: 8px;
+    height: 12px;
+    left: 500px;
+    top: 0;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 120%;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.submit-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 40px;
+    gap: 10px;
+    position: absolute;
+    width: 170.95px;
+    height: 52px;
+    left: 529.05px;
+    top: 12px;
+    background: #F020B5;
+    border-radius: 900px;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 120%;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.image-container {
+    position: absolute;
+    width: 300px;
+    /* Уменьшено, чтобы не вылезало за правый край */
+    height: 350px;
+    /* Уменьшено, чтобы не вылезало за низ */
+    right: 30px;
+    /* Отступ от правого края .blue-bg */
+    top: 45px;
+    /* Отступ сверху */
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    /* Сохраняет пропорции без обрезки */
+    /* или object-fit: cover; если нужно заполнить контейнер с обрезкой */
+}
+
+/* Стили для текстовых уведомлений */
+.required-notice,
+.privacy-notice {
+    position: absolute;
+    left: 100px;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.7);
+    /* Основной цвет текста */
+    line-height: 1.4;
+}
+
+.required-notice {
+    top: 110px;
+    width: 400px;
+}
+
+.privacy-notice {
+    top: 260px;
+    width: 700px;
+    margin-left: 0;
+}
+
+/* Специальные стили для ссылки */
+.privacy-notice .privacy-link {
+    color: rgba(255, 255, 255, 0.4);
+    /* Еще светлее (40% прозрачности) */
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    /* Отступ подчеркивания */
+    transition: all 0.3s ease;
+    cursor: pointer;
+    /* Курсор как у ссылки */
+}
+
+.privacy-notice .privacy-link:hover {
+    color: rgba(255, 255, 255, 0.8);
+    /* Ярче при наведении */
+    text-decoration: none;
+}
+
+
+
+/* Стили для четвертой части (преимущества) */
+/* Стили для четвертой части (преимущества) */
+.advantages-section {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+.advantages-title {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto 67px;
+    font-family: 'Unbounded', sans-serif;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 100%;
+    color: #000000;
+    text-align: left;
+    padding-left: 100px;
+}
+
+.advantages-card {
+    width: 1000px;
+    height: 533px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.advantages-content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.advantages-bg-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.advantages-bg-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.advantages-text-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.advantages-text-image img {
+    width: 90%;
+    height: 90%;
+    object-fit: contain;
+}
+
+/* Стили для пятой части (лицензии и футер) */
+.licenses-section {
+    position: relative;
+    width: 100%;
+
+    height: 582px;
+    margin: 0 auto;
+    background: #F2F6F7;
+    padding-top: 45px;
+}
+
+.container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.section-title {
+    font-family: 'Unbounded', sans-serif;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 100%;
+    color: #000000;
+    margin-bottom: 67px;
+}
+
+.licenses-container {
+    display: flex;
+    align-items: center;
+    /* Выравниваем все элементы по центру по вертикали */
+    justify-content: space-between;
+    gap: 20px;
+    /* Расстояние между элементами */
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.license-card {
+    width: 144px;
+    height: 181px;
+    background: #FFFFFF;
+    filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 10px;
+    overflow: hidden;
+    flex-shrink: 0;
+    /* Запрещаем уменьшение карточек */
+}
+
+.license-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.navigation-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.nav-button {
+    width: 60px;
+    height: 60px;
+    background: #F020B5;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    flex-shrink: 0;
+    /* Запрещаем уменьшение кнопок */
+}
+
+.arrow {
+    width: 19px;
+    height: 16px;
+    border: 2px solid #FFFFFF;
+    border-radius: 2px;
+    display: block;
+}
+
+.prev .arrow {
+    transform: rotate(0deg);
+}
+
+.next .arrow {
+    transform: rotate(180deg);
+}
+
+.therapy-button {
+    padding: 20px 10px;
+    background: #F020B5;
+    border-radius: 900px;
+    border: none;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 120%;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    cursor: pointer;
+    width: 440px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.disclaimer-container {
+    font-family: 'Manrope', sans-serif;
+    color: #246B7A;
+    margin-top: 70px;
+    padding-left: 8.5%;
+    /* Отступ как на макете */
+    text-align: left;
+}
+
+.disclaimer {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.4;
+    /* Межстрочный интервал */
+    letter-spacing: 5px;
+    margin-bottom: 10px;
+    /* Отступ перед копирайтом */
+}
+
+.page-footer {
+    position: relative;
+    padding-top: 14px;
+    text-align: left;
+}
+
+.footer-line {
+    position: absolute;
+    left: 8.5%;
+    right: 90.75%;
+    top: 0;
+    height: 1px;
+    background: #236B7A;
+}
+
+.footer-text {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 115%;
+    color: #236B7A;
+    margin: 0;
+}

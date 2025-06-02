@@ -1,0 +1,170 @@
+/* Основные стили */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Manrope', sans-serif;
+    background-color: #f5f5f5;
+}
+
+/* Контейнер */
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+/* Секция с услугами */
+.services-section {
+    position: relative;
+    width: 1200px;
+    height: 632px;
+    background: #64939D;
+    margin: 0 auto;
+}
+
+/* Заголовки */
+.main-title {
+    position: absolute;
+    font-family: 'Unbounded', sans-serif;
+    font-weight: 500;
+    font-size: 80px;
+    line-height: 96px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    left: 198px;
+    top: 78px;
+    margin: 0;
+}
+
+.services-title {
+    position: absolute;
+    font-family: 'Unbounded', sans-serif;
+    font-weight: 500;
+    font-size: 80px;
+    line-height: 96px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    left: 587px;
+    top: 156px;
+    margin: 0;
+}
+
+/* Контейнер кнопок */
+.buttons-container {
+    position: absolute;
+    width: 199px;
+    left: 100px;
+    top: 190px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Стили кнопок услуг */
+.service-button {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 199px;
+    height: 52px;
+    padding: 20px 10px;
+    border: 2px solid #FFFFFF;
+    border-radius: 50px;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Активная кнопка */
+.service-button.active {
+    background: #FFFFFF;
+    color: #030303;
+}
+
+/* Карточка с информацией */
+.info-card {
+    position: absolute;
+    width: 775px;
+    height: 300px;
+    left: 325px;
+    top: 252px;
+    background: #FFFFFF;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Фото услуги */
+.service-photo {
+    position: absolute;
+    width: 258px;
+    height: 260px;
+    left: 344px;
+    top: 272px;
+    background-image: url('os5.png');
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+}
+
+/* Подзаголовок услуги */
+.service-subtitle {
+    position: absolute;
+    left: 631px;
+    top: 272px;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 25px;
+    text-transform: uppercase;
+    color: #000000;
+    margin: 0;
+}
+
+/* Описание услуги */
+.service-description {
+    position: absolute;
+    width: 449px;
+    left: 632px;
+    top: 299px;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 17px;
+    color: #333333;
+}
+
+/* Кнопка "Подробнее" */
+.details-button {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 156px;
+    height: 52px;
+    left: 625px;
+    top: 490px;
+    background: #F020B5;
+    border: none;
+    border-radius: 40px;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.details-button:hover {
+    background-color: #D01A9B;
+}

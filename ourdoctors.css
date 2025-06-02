@@ -1,0 +1,265 @@
+.doctors-section {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    height: 805px;
+    background: #FFFFFF;
+    padding: 20px 0;
+}
+
+.breadcrumbs {
+    position: absolute;
+    left: 100px;
+    top: 18px;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    color: #000000;
+}
+
+.section-title {
+  position: absolute;
+  width: 692px;
+  height: 60px;
+  left: 98px;
+  top: 80px;
+  font-family: 'Unbounded';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 80px;
+  line-height: 103.5%;
+  display: flex;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.filters {
+    position: absolute;
+    align-items: center;
+    width: 1300px;
+    left: 100px;
+    top: 180px;
+    display: flex;
+    gap: 20px;
+    background-color: #64939D;
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+
+.filter-btn {
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: none;
+}
+
+.filter-btn.active {
+    background-color: #F020B5;
+    color: white;
+    float: right;
+}
+
+.nav-button {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #64939D;
+    border: none;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+}
+
+.prev {
+    left: 910px;
+    top: 321px;
+}
+
+.next {
+    left: 1068px;
+    top: 321px;
+}
+
+.doctors-grid {
+    display: flex;
+    justify-content: space-between;
+    pointer-events: none;
+}
+
+.doctor-card {
+    position: absolute;
+    width: 240px;
+    height: 385px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    background: linear-gradient(to bottom, #64939D 11%, #ffffff 35%);
+    border-radius: 20px;
+    overflow: hidden;
+    pointer-events: auto;
+}
+
+.photo-wrapper {
+    width: 100%;
+    height: 100%;
+}
+
+.photo-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+}
+
+.doctor-info {
+    padding: 20px;
+    background-color: #FFFFFF;
+    border-top: 2px solid #D4D4D4;
+    border-radius: 0 0 20px 20px;
+    width: 100%;
+}
+
+.doctor-info h3 {
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0 0 5px;
+    color: #000000;
+}
+
+.doctor-info .specialization {
+    font-size: 16px;
+    font-weight: 500;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.doctor-info .appointment-link {
+    font-size: 16px;
+    color: #64939D;
+    text-decoration: underline;
+}
+
+/*Третья часть */
+.callback-section {
+     position: relative;
+    width: 100%;
+    margin: 0 auto;
+    padding: 40px 0;
+    background: #64939D;
+    display: flex;
+    justify-content: space-between; /* Размещаем элементы по краям */
+    padding: 70px; /* Добавляем отступы */
+    margin-bottom: -70px;
+}
+
+.left-side {
+    display: flex;
+    flex-direction: column;
+    gap: 25px; /* Отступ между полями ввода */
+    flex-basis: 60%;
+}
+
+.left-side h1 {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 100%;
+    color: #FFFFFF;
+}
+
+.left-side p{
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+    color: #FFFFFF;
+}
+
+.for-client {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Отступ между полями ввода */
+}
+
+.for-client a {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    padding: 20px 40px;
+    border: 2px solid #FFFFFF;
+    border-radius: 900px;
+    background-color: transparent; /* Прозрачный фон */
+    color: #FFFFFF;
+    font-family: 'Manrope';
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.for-client button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 40px;
+    background: #FFFFFF;
+    border: 2px solid #FFFFFF;
+    border-radius: 900px;
+    font-family: 'Manrope';
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.right-side {
+    display: flex;
+    align-items: center; /* Выравниваем изображение вертикально */
+    flex-basis: 35%; /* Ограничиваем ширину правой части */
+}
+
+.rectangle10 {
+    width: 426px;
+    height: 344px;
+    border-radius: 46px;
+}
+
+.disclaimer-container {
+    font-family: 'Manrope', sans-serif;
+    color: #FFFFFF;
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    background: #64939D;
+    padding: 70px; /* Добавляем отступы */
+    margin-top: -50px;
+}
+
+.disclaimer {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.4; /* Межстрочный интервал */
+    letter-spacing: 5px;
+    margin-bottom: 10px; /* Отступ перед копирайтом */
+}
+
+.footer-text {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 115%;
+    color: #FFFFFF;
+    margin: 0;
+}
