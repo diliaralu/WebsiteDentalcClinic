@@ -2,7 +2,7 @@
     position: relative;
     width: 100%;
     margin: 0 auto;
-    height: 805px;
+    height: 855px;
     background: #FFFFFF;
     padding: 20px 0;
 }
@@ -65,19 +65,12 @@
 }
 
 .nav-button {
-    position: absolute;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    background-color: #64939D;
+    margin-top: 250px;
+    background: none;
     border: none;
-    color: white;
-    font-size: 18px;
     cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 10;
+    z-index: 100;
+    padding: 0;
 }
 
 .prev {
@@ -90,25 +83,28 @@
     top: 321px;
 }
 
+.nav-button img {
+    width: 100%; /* или конкретный размер, например 40px */
+    height: auto;
+    display: block;
+}
+
 .doctors-grid {
-    display: flex;
-    justify-content: space-between;
-    pointer-events: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); /* Создает сетку с автоматическим количеством столбцов */
+    gap: 30px; /* Поля между ячейками */
+    margin-top: 20px;
+    padding: 0 100px;
 }
 
 .doctor-card {
-    position: absolute;
-    width: 240px;
-    height: 385px;
+    position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     background: linear-gradient(to bottom, #64939D 11%, #ffffff 35%);
     border-radius: 20px;
     overflow: hidden;
-    pointer-events: auto;
 }
 
 .photo-wrapper {
@@ -124,11 +120,11 @@
 }
 
 .doctor-info {
-    padding: 20px;
-    background-color: #FFFFFF;
-    border-top: 2px solid #D4D4D4;
-    border-radius: 0 0 20px 20px;
-    width: 100%;
+    position: absolute;
+    bottom: 50px; /* Подстраивайте под нужное положение */
+    left: 0;
+    right: 0;
+    padding: 15px 20px;
 }
 
 .doctor-info h3 {
@@ -153,7 +149,6 @@
 
 /*Третья часть */
 .callback-section {
-     position: relative;
     width: 100%;
     margin: 0 auto;
     padding: 40px 0;
