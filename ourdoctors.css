@@ -2,7 +2,7 @@
     position: relative;
     width: 100%;
     margin: 0 auto;
-    height: 855px;
+    height: 900px;
     background: #FFFFFF;
     padding: 20px 0;
 }
@@ -37,15 +37,16 @@
 .filters {
     position: absolute;
     align-items: center;
-    width: 1300px;
+    width: 1320px;
     left: 100px;
     top: 180px;
     display: flex;
     gap: 20px;
     background-color: #64939D;
     border-radius: 10px;
-    padding: 10px 20px;
+    padding: 20px 20px;
 }
+
 
 .filter-btn {
     background-color: #FFFFFF;
@@ -56,44 +57,71 @@
     text-transform: uppercase;
     cursor: pointer;
     border: none;
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Отступ между текстом и иконкой */
 }
 
 .filter-btn.active {
     background-color: #F020B5;
     color: white;
     float: right;
+    margin-left: auto;
+    border-radius: 25px;
+}
+
+.filter-btn:hover {
+    opacity: 0.9;
+    transform: scale(1.02);
+    transition: 0.2s;
+}
+
+.search-icon {
+    width: 16px;
+    height: 16px;
+}
+
+.nav-buttons-container {
+    display: flex;
+    justify-content: flex-end; /* Выравнивание по правому краю */
+    align-items: center;
+    gap: 50px; /* Отступ между кнопками */
+    margin-top: 260px;
+    padding-right: 110px; /* Отступ от правого края страницы */
 }
 
 .nav-button {
-    margin-top: 250px;
+    display: flex;
+    align-items: center; /* Вертикальное выравнивание по центру */
+    justify-content: center; /* Горизонтальное выравнивание по центру */
+    gap: 8px; /* Отступ между текстом и иконкой */
     background: none;
     border: none;
     cursor: pointer;
-    z-index: 100;
-    padding: 0;
-}
-
-.prev {
-    left: 910px;
-    top: 321px;
-}
-
-.next {
-    left: 1068px;
-    top: 321px;
+    padding: 8px 12px;
+    font-size: 16px;
 }
 
 .nav-button img {
-    width: 100%; /* или конкретный размер, например 40px */
+    width: 20px; /* Размер иконок */
     height: auto;
-    display: block;
+}
+
+.nav-button img {
+    width: 35px; /* Фиксированный размер иконки */
+    height: auto;
+}
+
+.nav-button:hover img {
+    transform: scale(1.1);
+    transition: 0.2s;
 }
 
 .doctors-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); /* Создает сетку с автоматическим количеством столбцов */
     gap: 30px; /* Поля между ячейками */
-    margin-top: 20px;
+    margin-top: 30px;
     padding: 0 100px;
 }
 
@@ -105,6 +133,11 @@
     background: linear-gradient(to bottom, #64939D 11%, #ffffff 35%);
     border-radius: 20px;
     overflow: hidden;
+}
+
+.doctor-card:hover {
+    transform: scale(1.02);
+    transition: 0.4s;
 }
 
 .photo-wrapper {
@@ -217,6 +250,12 @@
     font-size: 16px;
     font-weight: 700;
     text-transform: uppercase;
+}
+
+.for-client button:hover {
+    opacity: 0.9;
+    transform: scale(1.02);
+    transition: 0.2s;
 }
 
 .right-side {
