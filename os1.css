@@ -1,16 +1,5 @@
-/* Общие стили */
-html,
-body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    /* Убираем прокрутку */
-    font-family: 'Manrope', sans-serif;
-}
-
 /* Контейнер для центрирования */
-.container {
+.container1 {
     display: flex;
     justify-content: center;
     align-items: flex-start;
