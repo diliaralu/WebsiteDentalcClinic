@@ -6,7 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Стоматологическая клиника</title>
     <link rel="stylesheet" href="menu.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="os1.css">
+    <link rel="stylesheet" href="cost_of_services.css">
+    <link rel="stylesheet" href="contacts.css">
+    <link rel="stylesheet" href="health.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600&family=Unbounded:wght@500;700&display=swap"
         rel="stylesheet">
@@ -30,21 +33,136 @@
     </nav>
 
     <!-- Основной контент -->
-    <div class="main-container">
-        <div class="background-image"></div>
-        <div class="foreground-image"></div>
-        
-        <h1 class="health">ЗДОРОВЬЕ</h1>
-        <h1 class="beauty">КРАСОТА</h1>
-        <h1 class="quality">КАЧЕСТВО</h1>
-        
-        <div class="info-box">
-            <p>СТОМАТОЛОГИЧЕСКОЕ ОБОРУДОВАНИЕ ИЗ ГЕРМАНИИ</p>
+    <section class="hero-section">
+        <img src="doc.png" alt="Фотография клиники" class="hero-image">
+        <div class="hero-text">
+            <div class="staircase-tagline">
+                <span>ЗДОРОВЬЕ</span>
+                <span>КРАСОТА</span>
+                <span>КАЧЕСТВО</span>
+            </div>
+            <img src="Rectangle 1.png" alt="Декор" class="right-image">
         </div>
-        
-        <button class="appointment-button">
-            ЗАПИСАТЬСЯ НА ПРИЕМ
-        </button>
+    </section>
+
+    <!-- Основные услуги -->
+    <div class="container1">
+        <div class="services-section">
+            <div class="main-title">основные</div>
+            <div class="services-title">услуги</div>
+
+            <div class="buttons-container">
+                <div class="service-button active treatment-button">терапия</div>
+                <div class="service-button prosthetics-button">протезирование</div>
+                <div class="service-button whitening-button">отбеливание</div>
+                <div class="service-button restoration-button">восстановление</div>
+                <div class="service-button surgery-button">хирургия</div>
+                <div class="service-button orthodontics-button">ортодонтия</div>
+            </div>
+
+            <div class="info-card"></div>
+            <div class="service-photo"></div>
+
+            <div class="service-subtitle">лечение зубов</div>
+            <div class="service-description">
+                Любому из нас хочется иметь здоровые крепкие зубы и сияющую улыбку. К сожалению, так получается далеко
+                не всегда. Плохая экология, некачественные продукты питания и множество других факторов способствуют
+                тому, что со временем наши зубы начинают постепенно утрачивать свою природную красоту и разрушаться.
+            </div>
+
+            <button class="details-button">подробнее</button>
+        </div>
     </div>
+
+    <!-- Стоимость услуг -->
+    <div class="container2">
+        <div class="inn-text">ООО  «ГК РТ-Клиника» ИНН 1122334455 </div>
+
+        <div class="title-container">
+            <h1 class="title-1">СТОИМОСТЬ</h1>
+            <h1 class="title-2">УСЛУГ</h1>
+        </div>
+
+        <div class="content-container">
+            <div class="form-container">
+                <h2 class="form-title">Заказать обратный звонок</h2>
+                <p class="form-subtitle">Наш сотрудник ответит вам в ближайшее время.</p>
+
+                <form class="form">
+                    <input type="text" class="form-input" placeholder="ВВЕДИТЕ ВАШЕ ИМЯ">
+                    <input type="tel" class="form-input" placeholder="+7 (___) ___-__-___">
+                    <button type="submit" class="submit-button">ЗАКАЗАТЬ ЗВОНОК</button>
+                </form>
+            </div>
+
+            <div class="services-container">
+                <div class="service-row">
+                    <div class="service-card service-1">
+                        <h3>Консультация стоматолога</h3>
+                        <p>от 1500 руб.</p>
+                        <img src="Frame 13.png" alt="Стрелка" class="arrow-icon">
+                    </div>
+                    <div class="service-card service-2">
+                        <h3>Лечение кариеса</h3>
+                        <p>от 3400 руб.</p>
+                        <img src="Frame 13.png" alt="Стрелка" class="arrow-icon">
+                    </div>
+                </div>
+                <div class="service-row">
+                    <div class="service-card service-3">
+                        <h3>Пломбирование зубов</h3>
+                        <p>от 5000 руб.</p>
+                        <img src="Frame 13.png" alt="Стрелка" class="arrow-icon">
+                    </div>
+                    <div class="service-card service-4">
+                        <h3>Лечение пульпита</h3>
+                        <p>от 5200 руб.</p>
+                        <img src="Frame 13.png" alt="Стрелка" class="arrow-icon">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Контакты -->
+    <section class="contacts-section">
+        <div class="content-wrapper">
+            <div class="text-content">
+                <h1 class="contacts-title">КОНТАКТЫ</h1>
+
+                <div class="contact-info">
+                    <p class="address">Республика Татарстан<br>г. Любой, торговый центр,<br>улица Советская, д. 1</p>
+
+                    <div class="phone-container">
+                        <p class="phone">+7 (999) 888-77-66</p>
+                        <div class="messengers">
+                            <a href="#" class="messenger-link"><img src="Telegram1.png" alt="Telegram"
+                                    class="messenger-icon"></a>
+                            <a href="#" class="messenger-link"><img src="WhatsApp1.png" alt="WhatsApp"
+                                    class="messenger-icon"></a>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="contact-button">СВЯЗАТЬСЯ С НАМИ</button>
+            </div>
+
+            <div class="map-container">
+                <img src="map.png" alt="Карта" class="map-image">
+                <img src="map_icon.png" alt="Метка" class="map-pin">
+            </div>
+        </div>
+
+        <div class="disclaimer-container">
+            <div class="disclaimer">
+                ИМЕЮТСЯ ПРОТИВОПОКАЗАНИЯ, </br>
+                НЕОБХОДИМА КОНСУЛЬТАЦИЯ СПЕЦИАЛИСТА
+            </div>
+            <div class="footer-text">
+                <img src="Group5_2.png">
+                2025 ООО «ГК РТ-Клиника» ИНН 1122334455
+            </div>
+        </div>
+    </section>
 </body>
 </html>
