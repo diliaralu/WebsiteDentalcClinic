@@ -35,19 +35,32 @@
 
         <!-- Фильтры -->
         <div class="filters">
-            <button class="filter-btn">ВВЕДИТЕ ФИО</button>
-            <button class="filter-btn">НАЗВАНИЕ СПЕЦИАЛЬНОСТИ</button>
-            <button class="filter-btn">СТАНЦИЯ МЕТРО</button>
+            <button class="filter-btn">
+                ВВЕДИТЕ ФИО
+                <img src="search.png" alt="Search" class="search-icon">
+            </button>
+            <button class="filter-btn">
+                НАЗВАНИЕ СПЕЦИАЛЬНОСТИ
+                <img src="indicator.png" alt="Search" class="search-icon">
+            </button>
+            <button class="filter-btn">
+                СТАНЦИЯ МЕТРО
+                <img src="indicator.png" alt="Search" class="search-icon">
+            </button>
             <button class="filter-btn active">ПОКАЗАТЬ РЕЗУЛЬТАТ</button>
         </div>
 
         <!-- Кнопки навигации -->
-        <button class="nav-button prev">
-            <img src="Frame 16_1.png" alt="Назад">
-        </button> 
-        <button class="nav-button next">
-            <img src="Frame 15_1.png" alt="Вперед">
-        </button>
+        <div class="nav-buttons-container">
+            <button class="nav-button prev">
+                <img src="Frame 16_1.png" alt="Назад">
+                назад
+            </button> 
+            <button class="nav-button next">
+                вперед
+                <img src="Frame 15_1.png" alt="Вперед">
+            </button>
+        </div>
 
         <!-- Сетка врачей -->
         <div class="doctors-grid">
@@ -77,7 +90,7 @@
             </div>
 
             <!-- Врач 3 -->
-            <div class="doctor-card">
+            <div class="doctor-card" >
                 <div class="photo-wrapper">
                     <img src="Group 62.png" alt="Алла Матвеева">
                 </div>
