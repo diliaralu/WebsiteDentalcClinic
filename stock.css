@@ -380,79 +380,7 @@
     text-decoration: none;
 }
 
-
-
-/* Стили для четвертой части (преимущества) */
-/* Стили для четвертой части (преимущества) */
-.advantages-section {
-    position: relative;
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 40px 0;
-}
-
-.advantages-title {
-    width: 100%;
-    max-width: 1000px;
-    margin: 0 auto 67px;
-    font-family: 'Unbounded', sans-serif;
-    font-weight: 600;
-    font-size: 36px;
-    line-height: 100%;
-    color: #000000;
-    text-align: left;
-    padding-left: 100px;
-}
-
-.advantages-card {
-    width: 1000px;
-    height: 533px;
-    margin: 0 auto;
-    position: relative;
-    overflow: hidden;
-    border-radius: 20px;
-}
-
-.advantages-content {
-    position: relative;
-    width: 100%;
-    height: 100%;
-}
-
-.advantages-bg-image {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-}
-
-.advantages-bg-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.advantages-text-image {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    z-index: 2;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.advantages-text-image img {
-    width: 90%;
-    height: 90%;
-    object-fit: contain;
-}
-
-/* Стили для пятой части (лицензии и футер) */
-/* Стили для пятой части (лицензии и футер) */
+/* Стили для четвертой части (лицензии и футер) */
 .licenses-section {
     position: relative;
     width: 100%;
@@ -602,3 +530,4 @@
     color: #236B7A;
     margin: 0;
 }
+
