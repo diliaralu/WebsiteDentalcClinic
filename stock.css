@@ -43,7 +43,6 @@
 .cards-container {
     position: absolute;
     width: 100%;
-    ;
     height: 230px;
     top: 205px;
     display: grid;
@@ -51,7 +50,6 @@
     grid-template-rows: repeat(2, 1fr);
     gap: 10px;
     margin: 0 auto;
-    /* Центрируем по горизонтали */
 }
 
 .card {
@@ -117,6 +115,10 @@
     transform: translate(-50%, -50%);
 }
 
+.card:hover {
+    transform: scale(1.02);
+    transition: 0.6s;
+}
 /* Остальные иконки можно доработать аналогично */
 
 .message-icon {
@@ -219,6 +221,11 @@
     height: 64px;
     left: 100px;
     top: 167px;
+}
+
+.form-container-b:hover {
+    transform: scale(1.02);
+    transition: 0.2s;
 }
 
 .form-input {
@@ -445,10 +452,10 @@
 }
 
 /* Стили для пятой части (лицензии и футер) */
+/* Стили для пятой части (лицензии и футер) */
 .licenses-section {
     position: relative;
     width: 100%;
-
     height: 582px;
     margin: 0 auto;
     background: #F2F6F7;
@@ -465,19 +472,19 @@
 .section-title {
     font-family: 'Unbounded', sans-serif;
     font-weight: 600;
-    font-size: 36px;
+    font-size: 45px;
     line-height: 100%;
     color: #000000;
     margin-bottom: 67px;
+    text-align: center;
+
 }
 
 .licenses-container {
     display: flex;
-    align-items: center;
-    /* Выравниваем все элементы по центру по вертикали */
+    align-items: center; /* Выравниваем все элементы по центру по вертикали */
     justify-content: space-between;
-    gap: 20px;
-    /* Расстояние между элементами */
+    gap: 20px; /* Расстояние между элементами */
     width: 100%;
     max-width: 1000px;
     margin: 0 auto;
@@ -490,8 +497,7 @@
     filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
     border-radius: 10px;
     overflow: hidden;
-    flex-shrink: 0;
-    /* Запрещаем уменьшение карточек */
+    flex-shrink: 0; /* Запрещаем уменьшение карточек */
 }
 
 .license-image {
@@ -519,8 +525,7 @@
     justify-content: center;
     align-items: center;
     padding: 0;
-    flex-shrink: 0;
-    /* Запрещаем уменьшение кнопок */
+    flex-shrink: 0; /* Запрещаем уменьшение кнопок */
 }
 
 .arrow {
@@ -562,19 +567,16 @@
     font-family: 'Manrope', sans-serif;
     color: #246B7A;
     margin-top: 70px;
-    padding-left: 8.5%;
-    /* Отступ как на макете */
+    padding-left: 8.5%; /* Отступ как на макете */
     text-align: left;
 }
 
 .disclaimer {
     font-weight: 500;
     font-size: 16px;
-    line-height: 1.4;
-    /* Межстрочный интервал */
+    line-height: 1.4; /* Межстрочный интервал */
     letter-spacing: 5px;
-    margin-bottom: 10px;
-    /* Отступ перед копирайтом */
+    margin-bottom: 10px; /* Отступ перед копирайтом */
 }
 
 .page-footer {
