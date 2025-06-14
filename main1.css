@@ -20,7 +20,7 @@ body {
 /* Основные стили для секции с фотографией */
 .hero-section {
     width: 100%;
-    height: calc(100vh - 80px);
+    height: 715px;
     /* Вычитаем высоту меню */
     position: relative;
     overflow: hidden;
@@ -28,15 +28,16 @@ body {
 
 /* Стили для изображения внутри секции */
 .hero-image {
+    background: repeating-linear-gradient(
+        -45deg,
+        #64939D,
+        #64939D 300px,
+        #FFFFFF 40px,
+        #FFFFFF 1300px
+    );
+    position: absolute;
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    /* Заполняет всю область с сохранением пропорций */
-    object-position: center;
-    /* Центрируем изображение */
-    position: absolute;
-    top: 0;
-    left: 0;
 }
 
 /* Медиа-запросы для адаптивности */
@@ -54,39 +55,25 @@ body {
 
 /* Стили для текста поверх изображения */
 .hero-text {
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    padding-left: 1%;
-    /* Добавляем отступ слева для всей группы */
-    color: black;
-    /* Цвет текста */
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-    /* Тень для лучшей читаемости */
-}
-
-.health-tagline {
-    display: flex;
-    gap: 30px;
-    /* Расстояние между словами */
-    font-family: 'Unbounded', sans-serif;
-    font-weight: 500;
-    font-size: 100px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
 }
 
 .staircase-tagline {
     display: flex;
     flex-direction: column;
-    margin-left: 12%;
-    /* Начальное смещение всей группы */
+    margin-left: 14%;
     line-height: 1.2;
+    color: black;
+}
+
+.staircase-tagline span:hover {
+    color: #F020B5; 
+    transform: scale(1.1);
+    transition: 0.4s;
 }
 
 .staircase-tagline span {
@@ -94,7 +81,6 @@ body {
     font-family: 'Unbounded', sans-serif;
     font-weight: 500;
     font-size: clamp(100px, 3vw, 36px);
-    /* Адаптивный размер */
     text-transform: uppercase;
     color: black;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
@@ -108,7 +94,7 @@ body {
 }
 
 .staircase-tagline span:nth-child(2) {
-    left: 100px;
+    left: 250px;
     top: 30px;
 }
 
@@ -128,23 +114,25 @@ body {
 
 /* Существующие стили (без изменений) */
 .right-image {
-    height: 230px;
-    width: 360px;
+    height: 160px;
+    width: 350px;
     position: absolute;
-    right: 32%;
-    top: 47%;
+    right: 3%;
+    top: 17%;
     transform: translateY(-50%);
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    padding: 20px;
+    background: #64939D;
+    border-radius: 20px; /* Скругление углов */
+    overflow: hidden; 
 }
 
 .right-image-content {
     color: white;
     font-family: 'Unbounded', sans-serif;
     text-align: right;
-    padding-right: 20px;
+    padding-right: 30px;
     text-transform: uppercase;
     width: 100%;
     line-height: 1.1;
@@ -158,6 +146,7 @@ body {
     letter-spacing: 0.1px;
 }
 
+
 /* Стили для левой кнопки */
 .left-button {
     position: absolute;
@@ -167,6 +156,7 @@ body {
     height: 80px;
     border-radius: 20px; /* Скругление углов */
     overflow: hidden; /* Важно для корректного скругления */
+    cursor: pointer;
 }
 
 .button-bg {
@@ -182,74 +172,68 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
-    font-family: 'Unbounded', sans-serif;
-    font-size: 19px;
+    font-family: 'Manrope', sans-serif;
+    font-size: 24px;
     text-transform: uppercase;
     text-align: center;
     width: 100%;
 }
 
+.left-button:hover{
+    transform: scale(1.1);
+    transition: 0.4s; 
+}
+
 
 /* Секция услуг */
 .services-section {
-    width: 100%;
-    padding: 150px 0;
-    /* Увеличенные отступы */
+    height: 725px;
     background: #64939D;
-    position: relative;
-    min-height: 900px;
-    /* Увеличенная высота */
     display: flex;
     justify-content: center;
 }
 
 .services-container-wrapper {
     width: 100%;
-    max-width: 1400px;
-    /* Увеличенная максимальная ширина */
     margin: 0 auto;
     position: relative;
-    height: 100%;
 }
 
 /* Заголовки */
 .main-title {
     position: absolute;
     font-family: 'Unbounded';
-    font-weight: 500;
-    font-size: 90px;
-    /* Увеличен размер */
+    font-weight: 1200;
+    font-size: 150px;
     line-height: 1.1;
     text-transform: uppercase;
     color: #FFFFFF;
     left: 12%;
-    top: 12%;
+    top: 9%;
 }
 
 .services-title {
     position: absolute;
     font-family: 'Unbounded';
-    font-weight: 500;
-    font-size: 90px;
+    font-weight: 1200;
+    font-size: 150px;
     /* Увеличен размер */
     line-height: 1.1;
     text-transform: uppercase;
     color: #FFFFFF;
     left: 48%;
-    top: 20%;
+    top: 21%;
 }
 
 /* Контейнер кнопок */
 .buttons-container {
     position: absolute;
     width: 220px;
-    /* Увеличен размер */
-    left: 12%;
-    top: 35%;
+    left: 5%;
+    top: 30%;
     display: flex;
     flex-direction: column;
     gap: 15px;
-    /* Увеличен промежуток */
 }
 
 /* Кнопки услуг */
@@ -283,61 +267,47 @@ body {
     color: #000000;
 }
 
-/* Карточка с информацией */
-.info-card {
-    position: absolute;
-    width: 850px;
-    /* Увеличен размер */
+.white-background {
+    position:absolute;
+    width: 870px;
     height: 380px;
-    /* Увеличен размер */
-    left: 28%;
-    top: 40%;
+    margin-left: 19%;
+    margin-top: 16.5%;
     background: #FFFFFF;
     border-radius: 25px;
-    /* Увеличен радиус */
 }
 
-/* Старый стиль (удалить background) */
-.service-photo {
-    position: absolute;
+.service-photo-img {
     width: 300px;
     height: 320px;
-    left: 29%;
-    top: 42%;
-    border-radius: 20px;
-    overflow: hidden; /* Добавлено для корректного отображения скругленных углов */
+    margin-left: 3.5%;
+    margin-top: 3.5%;
 }
 
-/* Новый стиль для изображения внутри */
-.service-photo-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
+.service-container {
+    display: flex;
+    gap: 22px; /* расстояние между картинкой и текстом */
+}
+
+.service-text-block {
+    display: flex;
+    flex-direction: column;
 }
 
 /* Изменённые стили для текстовых элементов */
 .service-subtitle {
-    position: absolute;
-    left: 46%;
-    /* Сдвинуто левее (было 56%) */
-    top: 42%;
-    /* Поднято выше (было 42%) */
     font-family: 'Manrope';
     font-weight: 700;
     font-size: 28px;
     line-height: 1.2;
     text-transform: uppercase;
     color: #000000;
+    margin-top: 5%;
 }
 
 .service-description {
-    position: absolute;
     width: 500px;
-    left: 46%;
-    /* Сдвинуто левее (было 56%) */
-    top: 48%;
-    /* Поднято выше (было 50%) */
+    margin-top: 5%;
     font-family: 'Manrope';
     font-weight: 500;
     font-size: 18px;
@@ -346,15 +316,9 @@ body {
 }
 
 .details-button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 25px 40px;
-    position: absolute;
-    left: 46%;
-    /* Сдвинуто левее (было 56%) */
-    top: 69%;
-    /* Поднято выше (было 70%) */
+    width: 220px;
+    padding: 20px 40px;
+    margin-top: 5%;
     background: #F020B5;
     border-radius: 50px;
     font-family: 'Manrope';
@@ -368,6 +332,8 @@ body {
 
 .details-button:hover {
     background: #D01A9B;
+    transform: scale(1.1);
+    transition: 0.4s;  
 }
 
 /* Адаптивность */
@@ -608,6 +574,11 @@ body {
     text-transform: uppercase;
 }
 
+.submit-button:hover{
+    transform: scale(1.1);
+    transition: 0.4s;  
+}
+
 .services-container {
     width: 60%;
 }
@@ -711,6 +682,11 @@ body {
     cursor: pointer;
     margin-bottom: 60px;
     text-transform: uppercase;
+}
+
+.contact-button:hover{
+    transform: scale(1.1);
+    transition: 0.4s;  
 }
 
 .map-container {
