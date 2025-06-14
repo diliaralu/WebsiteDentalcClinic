@@ -1,0 +1,835 @@
+/* Основные стили */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.unbounded {
+    font-family: 'Unbounded', sans-serif;
+}
+
+/* Герой-секция */
+/* hero-section.css */
+
+/* Основные стили для секции с фотографией */
+.hero-section {
+    width: 100%;
+    height: calc(100vh - 80px);
+    /* Вычитаем высоту меню */
+    position: relative;
+    overflow: hidden;
+}
+
+/* Стили для изображения внутри секции */
+.hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Заполняет всю область с сохранением пропорций */
+    object-position: center;
+    /* Центрируем изображение */
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* Медиа-запросы для адаптивности */
+@media (max-width: 768px) {
+    .hero-section {
+        height: calc(100vh - 60px);
+        /* Меньшая высота для мобильных */
+    }
+
+    .hero-image {
+        object-position: center top;
+        /* Смещаем изображение для мобильных */
+    }
+}
+
+/* Стили для текста поверх изображения */
+.hero-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 1%;
+    /* Добавляем отступ слева для всей группы */
+    color: black;
+    /* Цвет текста */
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    /* Тень для лучшей читаемости */
+}
+
+.health-tagline {
+    display: flex;
+    gap: 30px;
+    /* Расстояние между словами */
+    font-family: 'Unbounded', sans-serif;
+    font-weight: 500;
+    font-size: 100px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.staircase-tagline {
+    display: flex;
+    flex-direction: column;
+    margin-left: 12%;
+    /* Начальное смещение всей группы */
+    line-height: 1.2;
+}
+
+.staircase-tagline span {
+    position: relative;
+    font-family: 'Unbounded', sans-serif;
+    font-weight: 500;
+    font-size: clamp(100px, 3vw, 36px);
+    /* Адаптивный размер */
+    text-transform: uppercase;
+    color: black;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+    margin-bottom: 10px;
+}
+
+/* Эффект лесенки - каждое следующее слово смещаем правее */
+.staircase-tagline span:nth-child(1) {
+    left: 0;
+    top: 50px;
+}
+
+.staircase-tagline span:nth-child(2) {
+    left: 100px;
+    top: 30px;
+}
+
+.staircase-tagline span:nth-child(3) {
+    left: 360px;
+    top: 10px;
+}
+
+/* Адаптивность для мобильных */
+@media (max-width: 768px) {
+    .health-tagline {
+        flex-direction: column;
+        gap: 15px;
+        font-size: 18px;
+    }
+}
+
+/* Существующие стили (без изменений) */
+.right-image {
+    height: 230px;
+    width: 360px;
+    position: absolute;
+    right: 32%;
+    top: 47%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 20px;
+}
+
+.right-image-content {
+    color: white;
+    font-family: 'Unbounded', sans-serif;
+    text-align: right;
+    padding-right: 20px;
+    text-transform: uppercase;
+    width: 100%;
+    line-height: 1.1;
+}
+
+.right-image-content p {
+    width: 100%;
+    margin: 0;
+    font-size: 26px;
+    font-weight: 500;
+    letter-spacing: 0.1px;
+}
+
+/* Стили для левой кнопки */
+.left-button {
+    position: absolute;
+    left: 11%;
+    top: 85%;
+    width: 390px;
+    height: 80px;
+    border-radius: 20px; /* Скругление углов */
+    overflow: hidden; /* Важно для корректного скругления */
+}
+
+.button-bg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px; /* Скругление для изображения */
+}
+
+.button-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: 'Unbounded', sans-serif;
+    font-size: 19px;
+    text-transform: uppercase;
+    text-align: center;
+    width: 100%;
+}
+
+
+/* Секция услуг */
+.services-section {
+    width: 100%;
+    padding: 150px 0;
+    /* Увеличенные отступы */
+    background: #64939D;
+    position: relative;
+    min-height: 900px;
+    /* Увеличенная высота */
+    display: flex;
+    justify-content: center;
+}
+
+.services-container-wrapper {
+    width: 100%;
+    max-width: 1400px;
+    /* Увеличенная максимальная ширина */
+    margin: 0 auto;
+    position: relative;
+    height: 100%;
+}
+
+/* Заголовки */
+.main-title {
+    position: absolute;
+    font-family: 'Unbounded';
+    font-weight: 500;
+    font-size: 90px;
+    /* Увеличен размер */
+    line-height: 1.1;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    left: 12%;
+    top: 12%;
+}
+
+.services-title {
+    position: absolute;
+    font-family: 'Unbounded';
+    font-weight: 500;
+    font-size: 90px;
+    /* Увеличен размер */
+    line-height: 1.1;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    left: 48%;
+    top: 20%;
+}
+
+/* Контейнер кнопок */
+.buttons-container {
+    position: absolute;
+    width: 220px;
+    /* Увеличен размер */
+    left: 12%;
+    top: 35%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    /* Увеличен промежуток */
+}
+
+/* Кнопки услуг */
+.service-button {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    /* Увеличен размер */
+    border: 2px solid #FFFFFF;
+    border-radius: 900px;
+    font-family: 'Manrope';
+    font-weight: 500;
+    font-size: 18px;
+    /* Увеличен размер */
+    text-transform: uppercase;
+    color: #FFFFFF;
+    cursor: pointer;
+    background: transparent;
+    transition: all 0.3s ease;
+}
+
+.service-button:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.service-button.active {
+    background: #FFFFFF;
+    color: #000000;
+}
+
+/* Карточка с информацией */
+.info-card {
+    position: absolute;
+    width: 850px;
+    /* Увеличен размер */
+    height: 380px;
+    /* Увеличен размер */
+    left: 28%;
+    top: 40%;
+    background: #FFFFFF;
+    border-radius: 25px;
+    /* Увеличен радиус */
+}
+
+/* Старый стиль (удалить background) */
+.service-photo {
+    position: absolute;
+    width: 300px;
+    height: 320px;
+    left: 29%;
+    top: 42%;
+    border-radius: 20px;
+    overflow: hidden; /* Добавлено для корректного отображения скругленных углов */
+}
+
+/* Новый стиль для изображения внутри */
+.service-photo-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Изменённые стили для текстовых элементов */
+.service-subtitle {
+    position: absolute;
+    left: 46%;
+    /* Сдвинуто левее (было 56%) */
+    top: 42%;
+    /* Поднято выше (было 42%) */
+    font-family: 'Manrope';
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.service-description {
+    position: absolute;
+    width: 500px;
+    left: 46%;
+    /* Сдвинуто левее (было 56%) */
+    top: 48%;
+    /* Поднято выше (было 50%) */
+    font-family: 'Manrope';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #000000;
+}
+
+.details-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 40px;
+    position: absolute;
+    left: 46%;
+    /* Сдвинуто левее (было 56%) */
+    top: 69%;
+    /* Поднято выше (было 70%) */
+    background: #F020B5;
+    border-radius: 50px;
+    font-family: 'Manrope';
+    font-weight: 500;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    cursor: pointer;
+    border: none;
+}
+
+.details-button:hover {
+    background: #D01A9B;
+}
+
+/* Адаптивность */
+@media (max-width: 1600px) {
+    .services-container-wrapper {
+        max-width: 1200px;
+    }
+
+    .main-title,
+    .services-title {
+        font-size: 70px;
+    }
+
+    .info-card {
+        width: 700px;
+        left: 25%;
+    }
+
+    .service-photo {
+        left: 26%;
+    }
+
+    .service-subtitle,
+    .service-description,
+    .details-button {
+        left: 52%;
+    }
+}
+
+@media (max-width: 1200px) {
+    .services-section {
+        min-height: 800px;
+        padding: 100px 20px;
+    }
+
+    .main-title,
+    .services-title {
+        font-size: 60px;
+    }
+
+    .info-card {
+        width: 600px;
+        height: 350px;
+    }
+
+    .service-photo {
+        width: 280px;
+        height: 300px;
+    }
+
+    .service-description {
+        width: 450px;
+    }
+}
+
+@media (max-width: 992px) {
+    .services-section {
+        min-height: 700px;
+    }
+
+    .main-title,
+    .services-title {
+        font-size: 50px;
+    }
+
+    .buttons-container {
+        width: 180px;
+    }
+
+    .service-button {
+        height: 50px;
+        font-size: 16px;
+    }
+
+    .info-card {
+        width: 500px;
+        height: 300px;
+    }
+
+    .service-photo {
+        width: 240px;
+        height: 260px;
+    }
+
+    .service-subtitle {
+        font-size: 240px;
+    }
+
+    .service-description {
+        width: 380px;
+        font-size: 16px;
+    }
+
+    .details-button {
+        padding: 20px 30px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .services-section {
+        min-height: auto;
+        padding: 80px 20px;
+    }
+
+    .main-title,
+    .services-title {
+        position: static;
+        font-size: 40px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .buttons-container {
+        position: static;
+        width: 100%;
+        margin: 0 auto 30px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .service-button {
+        width: 45%;
+        margin-bottom: 15px;
+    }
+
+    .info-card,
+    .service-photo,
+    .service-subtitle,
+    .service-description,
+    .details-button {
+        position: static;
+        width: 100%;
+        margin: 20px auto;
+    }
+
+    .info-card {
+        height: auto;
+        padding: 20px;
+    }
+
+    .service-photo {
+        height: 250px;
+        margin: 20px auto;
+    }
+
+    .details-button {
+        display: block;
+        margin: 30px auto 0;
+    }
+}
+
+
+/* Секция стоимости */
+.cost-section {
+    padding: 100px 40px;
+    background-color: white;
+    position: relative;
+}
+
+.inn-text {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    font-size: 14px;
+    color: #666;
+}
+
+.title-container {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 60px;
+}
+
+.title-1,
+.title-2 {
+    font-family: 'Unbounded', sans-serif;
+    font-size: 80px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: black; /* Изменено на черный цвет */
+}
+
+.content-container {
+    display: flex;
+    gap: 40px;
+}
+
+.form-container {
+    width: 40%;
+    background-color: #64939D;
+    padding: 35px 40px;
+    border-radius: 20px;
+    color: white;
+}
+
+.form-title {
+    font-family: 'Unbounded', sans-serif;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.form-subtitle {
+    color: white;
+    margin-bottom: 30px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-input {
+    padding: 15px;
+    border: 2px solid white;
+    border-radius: 30px;
+    font-size: 16px;
+    background: transparent;
+    color: white;
+    text-transform: uppercase;
+}
+
+.form-input::placeholder {
+    color: white;
+    opacity: 1;
+}
+
+.submit-button {
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 15px;
+    border-radius: 30px;
+    font-weight: 600;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.services-container {
+    width: 60%;
+}
+
+.service-row {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.service-card {
+    flex: 1;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    position: relative;
+    min-height: 160px;
+    border: 2px solid #D4D4D4;
+}
+
+.service-card h3 {
+    margin-bottom: 10px;
+    font-size: 24px;
+    color: black; /* Добавлено для черного цвета */
+}
+
+.service-card p {
+    color: black; /* Изменено с #64939D на black */
+    font-weight: 700;
+}
+
+.arrow-icon {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    width: 30px;
+}
+
+/* Секция контактов */
+.contacts-section {
+    padding: 100px 40px;
+    background-color: #64939D;
+    color: white;
+}
+
+.content-wrapper {
+    display: flex;
+    gap: 60px;
+}
+
+.text-content {
+    flex: 1;
+}
+
+.contacts-title {
+    font-family: 'Unbounded', sans-serif;
+    font-size: 48px;
+    font-weight: 500;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+}
+
+.contact-info {
+    margin-bottom: 40px;
+}
+
+.address {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.phone-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.phone {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.messengers {
+    display: flex;
+    gap: 15px;
+}
+
+.messenger-icon {
+    width: 32px;
+    height: 32px;
+}
+
+.contact-button {
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 15px 40px;
+    border-radius: 50px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-bottom: 60px;
+    text-transform: uppercase;
+}
+
+.map-container {
+    flex: 1;
+    position: relative;
+}
+
+.map-image {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.map-pin {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    width: 40px;
+}
+
+.disclaimer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.disclaimer {
+    font-size: 14px;
+    color: white;
+    text-align: center;
+    line-height: 1.4;
+    letter-spacing: 1px;
+}
+
+.footer-text {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    font-size: 14px;
+}
+
+/* Адаптивность */
+@media (max-width: 1200px) {
+    .hero-section {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .hero-image,
+    .hero-text {
+        width: 100%;
+    }
+
+    .staircase-tagline span {
+        font-size: 36px;
+    }
+
+    .main-title,
+    .services-title,
+    .title-1,
+    .title-2 {
+        font-size: 60px;
+    }
+
+    .content-container {
+        flex-direction: column;
+    }
+
+    .form-container,
+    .services-container {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .menu {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .menu ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .staircase-tagline span {
+        font-size: 24px;
+    }
+
+    .staircase-tagline span:nth-child(2),
+    .staircase-tagline span:nth-child(3) {
+        margin-left: 30px;
+    }
+
+    .main-title,
+    .services-title,
+    .title-1,
+    .title-2 {
+        font-size: 40px;
+    }
+
+    .info-card,
+    .service-photo {
+        display: none;
+    }
+
+    .service-description {
+        max-width: 100%;
+    }
+
+    .content-wrapper {
+        flex-direction: column;
+    }
+
+    .map-container {
+        margin-top: 30px;
+    }
+}
